@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SamayEss", ".", "{33020E92-A085-4105-A82B-EF1DC525707F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/SamayEss"
+		Debug.AspNetCompiler.PhysicalPath = "..\SamayEss\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SamayEss\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SamayEss"
+		Release.AspNetCompiler.PhysicalPath = "..\SamayEss\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SamayEss\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49302"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33020E92-A085-4105-A82B-EF1DC525707F}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{33020E92-A085-4105-A82B-EF1DC525707F}.Debug|.NET.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

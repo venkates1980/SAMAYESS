@@ -1,0 +1,201 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs"
+    Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900"
+        rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style15
+        {
+            width: 180px;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-family: Calibri;
+            font-size: larger;
+        }
+        .style17
+        {
+            width: 22px;
+        }
+        
+    </style>
+    <link href="CalendarControl.css" rel="stylesheet" type="text/css" />
+</head>
+<body background="Images/Black Background Wood Clean.jpg" style="width: 1024px; height: 780px;
+    padding-left: 130px">
+
+    <script type="text/javascript" src="CalendarControl.js" language="javascript"></script>
+
+    <form id="form1" runat="server" title="">
+    <div style="background-position: bottom; background-repeat: repeat-x; background-attachment: scroll;"
+        align="left">
+        <div id="header-wrapper">
+            <div id="header" class="container">
+                <div id="logo">
+                    <h1 style="color: White">
+                         <asp:Image ID="Image1" runat="server" 
+                            BorderColor="SteelBlue"  Height="50px" ImageAlign="Left" 
+                            ImageUrl='<%# "~/ShowCompanyImage.aspx?ID=" +  Eval("CompanyID") %>' 
+                             Style="text-align: match-parent" Width="95px" />
+                        <asp:Label ID="lblCompany" runat="server"></asp:Label>
+                         <br /><asp:Label ID="lblEmployeeName" runat="server" Text="label" Font-Size="Medium" CssClass="headerusername"></asp:Label><br /></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page">
+        <table style="width: 100%;" cellpadding="0" cellspacing="0">
+            <tr>
+                <td bgcolor="White" class="style17" style="background-color: #404040">
+                </td>
+                <td bgcolor="White" class="style17" style="background-color: white">
+                </td>
+                <td bgcolor="White" style="padding-top: 10px; padding-right: 20px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </td>
+                <%--<td class="style20" bgcolor="White">
+                    &nbsp;</td>--%>
+                <td align="center" bgcolor="#404040" class="style15" valign="top" style="background-image: url('Images/Black Background Wood Clean.jpg')">
+                    <br />
+                    <asp:Button ID="Button7" runat="server" BackColor="#404040" BorderStyle="Ridge" BorderWidth="2px"
+                        ForeColor="White" Height="30px" Text="Logout" Width="155px" BorderColor="Black"
+                        OnClick="Button7_Click" />
+                    <br />
+                    <br />
+                    <asp:Button ID="Button12" runat="server" BackColor="White" BorderStyle="Ridge" BorderWidth="2px"
+                        ForeColor="Black" Height="30px" Text="Profile" Width="155px" BorderColor="Black"
+                        OnClick="Button12_Click" />
+                    <br />
+                    <br />
+                    <asp:Button ID="Button8" runat="server" BackColor="#404040" BorderStyle="Ridge" BorderWidth="2px"
+                        ForeColor="White" Height="30px" Text="View Attendance" Width="155px" BorderColor="Black"
+                        OnClick="Button8_Click" />
+                    <br />
+                    <br />
+                    <asp:Button ID="Button10" runat="server" BackColor="White" BorderStyle="Ridge" BorderWidth="2px"
+                        ForeColor="Black" Height="30px" Text="Leaves" Width="155px" BorderColor="Black"
+                        OnClick="Button10_Click" />
+                    <%-- <br />
+                    <br />
+                    <asp:Button ID="Button14" runat="server" BackColor="#404040" BorderStyle="Ridge"
+                        BorderWidth="2px" ForeColor="White" Height="30px" Text="Tour" Width="155px" BorderColor="Black"
+                        OnClick="Button14_Click" />
+                    <br />
+                    <br />
+                    <asp:Button ID="btnApplyOD" runat="server" BackColor="White" BorderStyle="Ridge"
+                        BorderWidth="2px" ForeColor="Black" Height="30px" Text="On Duty" Width="155px"
+                        BorderColor="Black" OnClick="btnOD_Click" />--%>
+                    <br />
+                    <br />
+                    <asp:Button ID="Button15" runat="server" BackColor="#404040" BorderStyle="Ridge" BorderWidth="2px"
+                        ForeColor="White" Height="30px" Text="View Holidays" Width="155px" BorderColor="Black"
+                        OnClick="Button15_Click" />
+                    <br />
+                    <br />
+                    <asp:Button ID="Button13" runat="server" BackColor="White" BorderStyle="Ridge"
+                        BorderWidth="2px" ForeColor="Black" Height="30px" Text="Change Password" Width="155px"
+                        BorderColor="Black" OnCommand="Button13_Command" />
+                    <br />
+                    <br />
+                    <br />
+                    <asp:Button ID="btnLeaveApproval" runat="server" BackColor="#0055ff" BorderStyle="Ridge"
+                        BorderWidth="2px" ForeColor="White" Height="30px" Text="LEAVE APPROVAL" Font-Bold="true" Width="155px"
+                        BorderColor="Black" OnClick="btnLeaveApproval_Click" />
+                    <%--<br />
+                    <br />
+                    <asp:Button ID="btnTourApproval" runat="server" BackColor="White" BorderStyle="Ridge"
+                        BorderWidth="2px" ForeColor="Black" Height="30px" Text="Tour Approval" Width="155px"
+                        BorderColor="Black" OnClick="btnTourApproval_Click" />
+                    <br />
+                    <br />
+                    <asp:Button ID="btnODApproval" runat="server" BackColor="#404040" BorderStyle="Ridge"
+                        BorderWidth="2px" ForeColor="White" Height="30px" Text="OD Approval" Width="155px"
+                        BorderColor="Black" OnClick="btnODApproval_Click" />--%>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:Button ID="btnPresentReport" runat="server" BackColor="LightGreen" BorderStyle="Ridge"
+                        BorderWidth="2px" ForeColor="Black" Height="30px" Text="Present Report" Width="155px"
+                        BorderColor="Black" OnClick="btnPresentReport_Click" />
+                    <br />
+                    <br />
+                    <asp:Button ID="btnAbsentReport" runat="server" BackColor="OrangeRed" BorderStyle="Ridge"
+                        BorderWidth="2px" ForeColor="White" Height="30px" Text="Absent Report" Width="155px"
+                        BorderColor="Black" OnClick="btnAbsentReport_Click" />
+                    <br />
+                    <br />
+                    <asp:Button ID="btnArrivalReport" runat="server" BackColor="YellowGreen" BorderStyle="Ridge"
+                        BorderWidth="2px" ForeColor="Black" Height="30px" Text="Arrival Report" Width="155px"
+                        BorderColor="Black" OnClick="btnPresentReport0_Click" />
+                    <br />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="copyright">
+        <p>
+            Designed and Developed by Paramount Office Systems Pvt. Ltd.</p>
+    </div>
+    </form>
+</body>
+</html>

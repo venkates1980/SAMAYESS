@@ -1,0 +1,179 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="LeaveEntry.aspx.cs" Inherits="Default2" Title="Untitled Page" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .style20
+        {
+            width: 187px;
+        }
+        .style21
+        {
+            color: #000066;
+            font-weight: bold;
+            font-size: x-large;
+            height: 17px;
+            width: 252px;
+        }
+        .style22
+        {
+            width: 187px;
+            height: 17px;
+        }
+        .style23
+        {
+            height: 17px;
+            width: 382px;
+        }
+        .style26
+        {
+            width: 252px;
+        }
+        .style27
+        {
+            width: 382px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div style="background-color: #FFFFFF">
+    <div> <b>
+        <br />
+        &nbsp;&nbsp;<asp:Image ID="Image1" runat="server" ImageAlign="left" 
+                        ImageUrl="~/Images/trfnote32.png" Height="28px" Width="31px" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Leave Application
+        <br />
+        <hr />
+        </b>
+                                </div>
+        <table style="width:100%;">
+            <tr>
+                <td class="style22" align="right">
+                    </td>
+                <td class="style21">
+                </td>
+                <td class="style23">
+                    </td>
+            </tr>
+            <tr>
+                <td class="style20">
+                    Applied On</td>
+                <td class="style26">
+                    &nbsp;</td>
+                <td class="style27">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style20">
+                    From</td>
+                <td class="style26">
+                    <asp:TextBox ID="txtFrom" runat="server" Width="238px"></asp:TextBox>
+                    <asp:ImageButton ID="ImageButton1" runat="server" onclick="ImageButton1_Click" 
+                        style="height: 18px" Width="20px" ImageUrl="~/Images/calm16.png" />
+                    <asp:Calendar ID="calfrom" runat="server" 
+                        onselectionchanged="Calendar1_SelectionChanged" Visible="False">
+                    </asp:Calendar>
+                                        </td>
+                <td class="style27">
+                    &nbsp;</td>
+            </tr>
+              <tr>
+                <td class="style20">
+                    &nbsp;&nbsp;</td>
+                <td class="style26">
+                    <asp:DropDownList ID="ddlfrom" runat="server" Width="137px">
+                        <asp:ListItem Value="1">Half</asp:ListItem>
+                        <asp:ListItem Value="2">Full</asp:ListItem>
+                    </asp:DropDownList>
+                  </td>
+                <td class="style27">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style20">
+                    To</td>
+                <td class="style26">
+                    <asp:TextBox ID="txtTo" runat="server" Width="238px"></asp:TextBox>
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="18px" 
+                        ImageUrl="~/Images/calm16.png" onclick="ImageButton2_Click" Width="21px" />
+                    <asp:Calendar ID="calto" runat="server" 
+                        onselectionchanged="calto_SelectionChanged" Visible="False"></asp:Calendar>
+                </td>
+                <td class="style27">
+                    &nbsp;</td>
+            </tr>
+              <tr>
+                <td class="style20">
+                    &nbsp;</td>
+                <td class="style26">
+                    <asp:DropDownList ID="ddlto" runat="server" Width="137px">
+                        <asp:ListItem Value="1">Half</asp:ListItem>
+                        <asp:ListItem Value="2">Full</asp:ListItem>
+                    </asp:DropDownList>
+                  </td>
+                <td class="style27">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style20">
+                    Leave Type</td>
+                <td class="style26">
+                    <asp:DropDownList ID="ddlLeavetype" runat="server" Height="18px" Width="149px">
+                    </asp:DropDownList>
+                </td>
+                <td class="style27">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style20">
+                    Reason</td>
+                <td class="style26">
+                    <asp:TextBox ID="txtReason" runat="server" Width="711px"></asp:TextBox>
+                </td>
+                <td class="style27">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style20">
+                    &nbsp;</td>
+                <td class="style26">
+                    &nbsp;</td>
+                <td class="style27">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style20">
+                    &nbsp;</td>
+                <td class="style26">
+                    &nbsp;</td>
+                <td class="style27">
+                    &nbsp;</td>
+            </tr>
+            
+        </table>
+        <div style="background-color: #FFFFFF" > 
+            <b>
+            <hr />
+            </b>
+                    <asp:Button ID="btnTrans" runat="server" BackColor="#663300" BorderStyle="None" 
+                        BorderWidth="2px" ForeColor="White" Height="21px" Text="Mode" 
+                        Width="78px" BorderColor="Black" onclick="Button7_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>
+                    <asp:Button ID="Button8" runat="server" BackColor="#663300" BorderStyle="None" 
+                        BorderWidth="2px" ForeColor="White" Height="21px" Text="Back" 
+                        Width="78px" BorderColor="Black" onclick="Button7_Click" />
+                    <hr />
+            </b>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+</asp:Content>
+
